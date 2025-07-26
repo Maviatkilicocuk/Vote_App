@@ -1,0 +1,3 @@
+table:
+  name: votes
+  schema: public
