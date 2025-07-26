@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: hasura-backend
+    env: docker
+    plan: free
+    dockerfilePath: ./backend/docker-compose.yml
