@@ -1,6 +1,10 @@
+version: "1"
 services:
   - type: web
     name: hasura-backend
-    env: docker
+    runtime: docker-compose
+    repo: https://github.com/Maviatkilicocuk/Vote_App
     plan: free
-    dockerfilePath: ./backend/docker-compose.yml
+    region: oregon
+    dockerComposePath: ./backend/docker-compose.yml
+    autoDeployTrigger: commit
